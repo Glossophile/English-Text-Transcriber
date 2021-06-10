@@ -354,7 +354,7 @@ public class Morphology {
             else if ((term == 's' || Lingua.sonRank(term) > Lingua.sonRank('s')) && !DictReader.isAvail(mal) && (paff.equals("s~") || paff.equals("U"))) {
                 rev = mal+"s";
             }
-            else if (Lingua.isConsonant(term) && Lingua.isVowel(preterm) && Lingua.isVowel(paff.charAt(0)) || Lingua.isVowel(term)) {
+            else if ((Lingua.isConsonant(term) && Lingua.isVowel(preterm) || Lingua.isVowel(term)) && Lingua.isVowel(paff.charAt(0))) {     //final disjunct moved into initial conjunct on 6/9/2021 for "pledges"
                 rev = mal+"e";
                 magicE = true;
             }
