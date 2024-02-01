@@ -120,11 +120,31 @@ public class Phonology {
             if (point0 == '˞' && (point1 == '.' || point1 == 'ˌ' || point1 == 'ˈ') && (point2 == 'ɹ' || point2 == 'r')) { 
                 rhot = Util.replaceAtIndex(rhot,"(ɹ)",h+1,1);
             }
-            else if (point0 == '˞' && (point1 == '.' || point1 == 'ˌ' || point1 == 'ˈ') && Lingua.isVowel(point2)) { 
+            else if ((point0 == '˞' || h > 1 && rhot.charAt(h-2) == '˞' && point0 == 'ː') && (point1 == '.' || point1 == 'ˌ' || point1 == 'ˈ') && Lingua.isVowel(point2)) { 
                 rhot = Util.insertAtIndex(rhot,"(ɹ)",h+1);
             }
         }
         return rhot;
+    }
+    public static String deSchwi (String schwi) {
+        String deschwid = schwi;
+        if (deschwid.contains("i")) {
+            int e = 0;
+            int l = deschwid.length();
+            while (e < l) {
+                char v = deschwid.charAt(e);
+                if (v == 'i' || v == 'u') {
+                    if (v < l - 1) {
+                        deschwid = deschwid.substring(0,v+1)+"ː"+deschwid.substring(v+1);
+                    }
+                    else {
+                        deschwid = deschwid+"ː";
+                    }
+                }
+                e++;
+            }
+        }
+        return deschwid;
     }
     public static String deRhot (String intR, boolean intrude) {
         String derh = intR;
@@ -851,6 +871,9 @@ public class Phonology {
                 }
                 else if (unred.equals("o")) {
                     recov += act.replace("ɑː", "ɒ");
+                }
+                else {
+                    recov += act;
                 }
             }
             else {
@@ -1623,13 +1646,13 @@ public class Phonology {
             }
             rhot = britrhot.replaceAll("r","ɹ");
         }
-        rhot = (rhot.replaceAll("ɜːɹ","ɜ˞")).replaceAll("əɹ","ə˞");
-        rhot = (rhot.replaceAll("ɑːɹ","ɑ˞")).replaceAll("ɔːɹ","ɔ˞");
+        rhot = (rhot.replaceAll("ɜːɹ","ɜ˞ː")).replaceAll("əɹ","ə˞");
+        rhot = (rhot.replaceAll("ɑːɹ","ɑ˞ː")).replaceAll("ɔːɹ","ɔ˞ː");
         rhot = (rhot.replaceAll("æˈɹ","eˈɹ")).replaceAll("æˌɹ","eˌɹ");
         rhot = rhot.replaceAll("æ.ɹ","e.ɹ");
         rhot = rhot.replaceAll("æɹ","eɹ");
-        rhot = rhot.replaceAll("ʌɹ","ɜ˞");
-        rhot = rhot.replaceAll("ɜːɹ","ɜ˞");
+        rhot = rhot.replaceAll("ʌɹ","ɜ˞ː");
+        rhot = rhot.replaceAll("ɜːɹ","ɜ˞ː");
         /*rhot = (rhot.replaceAll("tjuː","tuː")).replaceAll("djuː","duː");
         rhot = (rhot.replaceAll("sjuː","suː")).replaceAll("zjuː","zuː");
         rhot = (rhot.replaceAll("ɹˈɹ","ˈɹ")).replaceAll("ɹˌɹ","ˌɹ");
@@ -1850,18 +1873,18 @@ public class Phonology {
     }
     public static String rhotacize (String norho) {
         String rho = norho.replaceAll("r", "ɹ");
-        rho = rho.replaceAll("ɜːɹ","ɜ˞");
-        rho = (rho.replaceAll("ɝː","ɜ˞")).replaceAll("ɚ","ə˞");
-        rho = (rho.replaceAll("ɜː","ɜ˞")).replaceAll("əɹ","ə˞");
-        rho = (rho.replaceAll("ɑɹ","ɑ˞")).replaceAll("ɔɹ","ɔ˞");
-        rho = (rho.replaceAll("ɑːɹ","ɑ˞")).replaceAll("ɔːɹ","ɔ˞");
+        rho = rho.replaceAll("ɜːɹ","ɜ˞ː");
+        rho = (rho.replaceAll("ɝː","ɜ˞ː")).replaceAll("ɚ","ə˞");
+        rho = (rho.replaceAll("ɜː","ɜ˞ː")).replaceAll("əɹ","ə˞");
+        rho = (rho.replaceAll("ɑɹ","ɑ˞ː")).replaceAll("ɔɹ","ɔ˞ː");
+        rho = (rho.replaceAll("ɑːɹ","ɑ˞ː")).replaceAll("ɔːɹ","ɔ˞ː");
         rho = (rho.replaceAll("ɪəɹ","ɪə˞")).replaceAll("ʊəɹ","ʊə˞");
         rho = (rho.replaceAll("ɪə.ɹ","ɪə˞")).replaceAll("ʊə.ɹ","ʊə˞");
         /*rho = (rho.replaceAll("aɪə.ɹ","aɪə˞")).replaceAll("aʊə.ɹ", "aʊə˞");
         rho = (rho.replaceAll("ɔɪə.ɹ","ɔɪə˞")).replaceAll("oʊə.ɹ", "oʊə˞");
         rho = rho.replaceAll("eɪə.ɹ","eɪə˞");*/
         rho = rho.replaceAll("ʌɹ","ɜ˞");
-        rho = rho.replaceAll("ɜɹ","ɜ˞");
+        rho = rho.replaceAll("ɜɹ","ɜ˞ː");
         rho = rho.replaceAll("]ɹ","]˞");
         return rho;
     }
@@ -2019,7 +2042,7 @@ public class Phonology {
         britpron = britpron.replaceAll("ɑʊ","aʊ");
         ampron = rhotVow(ampron);
         ampron = (ampron.replaceAll("tʃ","t͡ʃ")).replaceAll("dʒ", "d͡ʒ");
-        ampron = (ampron.replaceAll("ɝː","ɜ˞")).replaceAll("ɚ","ə˞");
+        ampron = (ampron.replaceAll("ɝː","ɜ˞ː")).replaceAll("ɚ","ə˞");
         ampron = ampron.replaceAll("ɑɪ","aɪ");
         ampron = ampron.replaceAll("ɑʊ","aʊ");
         if (britpron.endsWith("-")) {
@@ -2151,7 +2174,7 @@ public class Phonology {
             results2 = "|||";
             cd = Lemma.encode("00");
         }
-        Lemma refined = new Lemma(rough.getSpelling(),results1,results2,ctgry,rtal);
+        Lemma refined = new Lemma(rough.getSpelling(),results1, results2,ctgry,rtal);
         /*if (syncopate) {
             String back1 = rough.getPronUK();
             String back2 = rough.getPronUS();
