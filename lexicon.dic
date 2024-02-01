@@ -1,22 +1,22 @@
-﻿dummy	ˈdʌ.miː	noun	0
-accursed	əˈkɜ˞.sɪd	adjective	0
+//START OF MANUALLY LISTED ENTRIES
+accursed	əˈkɜ˞ː.sɪd	adjective	0
 acknowledged	əkˈnɒlɪd͡ʒd	verb	0
 adult	ˈæ.dəlt əˈdʌlt	noun	0
 adulthood	ˈæ.dəlt.hʊd əˈdʌlt.hʊd	noun	0
 alphabetical	ˌæl.fəˈbɛ.tɪ.kəl	adjective	0
+amidst	əˈmɪdst	preposition	0
 amongst	əˈmʌŋst	preposition	0
+antecedent	ˌæn.tɪˈsiː.dənt ˌæn.təˈsiː.dənt	noun	0
+antecedent	ˌæn.tɪˈsiː.dənt ˌæn.təˈsiː.dənt	adjective	0
 arms	ˈɑ˞mz	noun	0
 ate	ˈeɪt	verb	0
-austerity	ɔːsˈtɛ.ɹɪ.tiː	noun	0
-aversion	əˈvɜ˞.ʒən	noun	0
-ballroom	ˈbɔːl.ɹuːm	noun	0
-bathroom	ˈbɑːθ.ɹuːm ˈbæθ.ɹuːm	noun	0
+austerity	ɔːsˈtɛ.ɹə.tiː	noun	0
+aversion	əˈvɜ˞ː.ʒən	noun	0
 because	bɪˈkɒz	conjunction	0
-bedroom	ˈbɛd.ɹuːm	noun	0
 begat	bɪˈgæt	verb	0
 begot	bɪˈgɒt	verb	0
 begotten	bɪˈgɒ.tən	verb	0
-boardroom	ˈbɔ˞d.ɹuːm	noun	0
+blurt	blɜ˞ːt	verb	0
 bounds	baʊndz	noun	0
 built	ˈbɪlt	verb	0
 cemetery	ˈsɛ.mə.tə.ɹiː ˈsɛ.mə.tɛ.ɹiː	noun	0
@@ -25,104 +25,116 @@ configure	kənˈfɪg.jə˞	verb	13
 consist	kənˈsɪst	verb	0
 configuration	kənˌfɪg.jə˞ˈ.eɪ.ʃən	noun	13
 conjure	ˈkʌn.d͡ʒəɹ ˈkɑːn.d͡ʒə˞	verb	0
-conjurer	ˈkʌn.d͡ʒə.ɹəɹ ˈkɑːn.d͡ʒə˞.ə˞	noun	0
-deliberately	dɪˈlɪ.bɹət.liː	adverb	0
+conjurer	ˈkʌn.d͡ʒə.ɹəɹ ˈkɑːn.d͡ʒə˞.ɹə˞	noun	0
+c~mon	kəm~ˈɒn	exclamation	0
+desperation	ˌdɛs.pə˞ˈeɪ.ʃən	noun	0
 diamond	ˈdaɪə.mənd ˈdaɪ.mənd	noun	0
-directness	dɪˈɹɛkt.nəs	noun	0
-dreamt	ˈdɹɛmt	verb	0
 dwellt	ˈdwɛlt	verb	0
 english	ˈɪŋ.glɪʃ	adjective	0
 ethnicity	ɛθˈnɪ.sɪ.tiː	noun	0
-explorer	ɪkˈsplɔ˞.ə˞	noun	0
-favorite	ˈfeɪv.ɹɪt	adjective	0
-favourite	ˈfeɪv.ɹɪt	adjective	0
-fervor	ˈfɜ˞.və˞	noun	0
+familiar	fəˈmɪ.liː.əɹ fəˈmɪl.jə˞	adjective	0
+familiar	fəˈmɪ.liː.əɹ fəˈmɪl.jə˞	noun	0
 figure	ˈfɪg.jə˞	verb	13
 figurative	ˈfɪg.jə˞.ə.tɪv	adjective	13
 foist	ˈfɔɪst	verb	0
-forehead	ˈfɔ˞.hɛd	noun	0
-foretold	ˈfɔ˞.toʊld	verb	0
-forever	fəˈɹɛ.vər fɔ˞ˈɛ.və˞	adverb	0
-foresaw	fɔ˞ˈsɔː	verb	0
-foreseen	fɔ˞ˈsiːn	adjective	0
+forehead	ˈfɔ˞ː.hɛd	noun	0
+foretold	ˈfɔ˞ː.toʊld	verb	0
+forever	fəˈɹɛ.vər fɔ˞ːˈɛ.və˞	adverb	0
+foresaw	fɔ˞ːˈsɔː	verb	0
+foreseen	fɔ˞ːˈsiːn	adjective	0
 forgot	fə˞ˈgɒt	verb	0
 forgotten	fə˞ˈgɒ.tən	verb	0
+gist	d͡ʒɪst	noun	0
 harass	ˈhæ.ɹəs həˈɹæs	verb	0
 harassment	ˈhæ.ɹəs.mənt həˈɹæs.mənt	noun	0
-heard	ˈhɜ˞d	verb	0
-hearts	ˈhɑ˞ts	noun	0
+heard	ˈhɜ˞ːd	verb	0
 heinous	ˈheɪ.nəs	adjective	0
 hereditary	həˈɹɛ.dɪ.təɹ.iː həˈɹɛ.dɪ.tɛ.ɹiː	adjective	0
-hurricane	ˈhʌ.ɹɪ.kən ˈhɜ˞.ɪ.keɪn	noun	0
+hours	aʊə˞z	noun	0
+hurricane	ˈhʌ.ɹɪ.kən ˈhɜ˞ː.ɪ.keɪn	noun	0
+immature	ˌɪ.məˈt͡ʃʊəɹ ˌɪ.məˈt͡ʃʊə˞	adjective	0
+intellect	ˈɪn.tə.lɛkt	noun	0
 interrupt	ˌɪn.tə˞ˈɹʌpt	verb	0
 interruption	ˌɪn.tə˞ˈɹʌp.ʃən	noun	0
-inventory	ˈɪn.vən.tə.ɹiː ˈɪn.vən.tɔ˞.iː	noun	0
+inventory	ˈɪn.vən.tə.ɹiː ˈɪn.vən.tɔ˞ː.iː	noun	0
+inwards	ˈɪn.wə˞dz	adverb	0
+japanese	ˌd͡ʒæ.pəˈniːz	adjective	0
+japanese	ˌd͡ʒæ.pəˈniːz	noun	0
 knelt	nɛlt	verb	0
 legendary	ˈlɛ.d͡ʒən.də.ɹiː ˈlɛ.d͡ʒən.dɛ.ɹiː	adjective	0
 legislative	ˈlɛ.d͡ʒɪ.slə.tɪv ˈlɛ.d͡ʒɪ.sleɪ.tɪv	adjective	0
 legislature	ˈlɛ.d͡ʒɪ.slə.t͡ʃʊəɹ ˈlɛ.d͡ʒɪ.sleɪ.t͡ʃə˞	noun	0
-livin	ˈlɪ.vɪn	noun	0
 math	ˈmæθ	noun	0
 maths	ˈmæθs	noun	0
 matrimony	ˈmæ.tɹɪ.mə.niː ˈmæ.tɹɪ.moʊ.niː	noun	0
+mature	məˈt͡ʃʊəɹ məˈt͡ʃʊə˞	adjective	0
+mature	məˈt͡ʃʊəɹ məˈt͡ʃʊə˞	verb	0
+maturely	məˈt͡ʃʊə˞.liː	adverb	0
+maturity	məˈt͡ʃʊə.ɹə.tiː məˈt͡ʃʊə˞.ə.tiː	noun	0
 meant	ˈmɛnt	verb	0
 medieval	mɛˈdiː.vəl mɪˈdiː.vəl	adjective	14
-mercenary	ˈmɜː.sə.nə.ɹiː ˈmɜ˞.sə.nɛ.ɹiː	noun	0
-momentary	ˈməʊ.mən.tə.ɹiː ˈmoʊ.mən.tɛ.ɹiː	adjective	0
+mercenary	ˈmɜː.s]n.]ɹ.iː ˈmɜ˞ː.s]n.ɛ.ɹiː	noun	0
+missionary	ˈmɪ.ʃ]n.]ɹ.iː ˈmɪ.ʃ]n.ɛ.ɹiː	noun	0
+momentary	ˈməʊ.mən.t]ɹ.iː ˈmoʊ.mən.tɛ.ɹiː	adjective	0
 narrate	ˈnæ.ɹeɪt	verb	0
-nationally	ˈnæ.ʃə.nə.liː	adverb	0
+nascent	ˈneɪ.sənt	adjective	0
 natured	ˈneɪ.t͡ʃə˞d	adjective	0
 nirvana	nɪə˞ˈ.vɑː.nə	noun-U	12
 often	ˈɒ.fən	adverb	0
+okay	oʊˈkeɪ	noun	0
+okay	oʊˈkeɪ	adjective	0
+okay	oʊˈkeɪ	adverb	0
+okay	oʊˈkeɪ	verb	0
 opening	ˈoʊ.pə.nɪŋ	substantive	0
-orthography	ɔ˞ˈθɒ.gɹə.fiː	noun	0
+orthography	ɔ˞ːˈθɒ.gɹə.fiː	noun	0
 overate	ˌoʊ.və˞ˈeɪt	verb	0
 oversaw	ˌoʊvə˞ˈsɔː	verb	0
 overseen	ˌoʊvə˞ˈsiːn	adjective	0
 pestilent	ˈpɛs.tɪ.lənt ˈpɛs.tə.lənt	adjective	0
-poor	ˈpɔ˞	adjective	0
-primary	ˈpɹaɪ.mə.ɹiː ˈpɹaɪ.mɛ.ɹiː	adjective	0
-quarter	ˈkwɔ˞.tə˞	verb	0
-quarter	ˈkwɔ˞.tə˞	noun	0
-refer	ɹɪˈfɜ˞	verb	0
+poor	ˈpɔ˞ː	adjective	0
+posture	ˈpɒs.t͡ʃə˞	noun	0
+posture	ˈpɒs.t͡ʃə˞	verb	0
+premature	ˌpɹɛ.məˈt͡ʃʊə˞ ˌpɹiː.məˈt͡ʃʊə˞	adjective	0
+prematurely	ˌpɹɛ.məˈt͡ʃʊə.liː ˌpɹiː.məˈt͡ʃʊə˞.liː	adverb	0
+quarter	ˈkwɔ˞ː.tə˞	verb	0
+quarter	ˈkwɔ˞ː.tə˞	noun	0
+ramification	ˌɹæ.mɪ.fɪˈkeɪ.ʃən ˌɹæ.mə.fəˈkeɪ.ʃən	noun	0
+refer	ɹɪˈfɜ˞ː	verb	0
 rely	ɹɪˈlaɪ	verb	0
+required	ɹɪˈkwaɪə˞d	adjective	0
+rodeo	ˈɹoʊ.diː.oʊ	noun	0
+romanize	ˈɹoʊ.mə.naɪz	verb	0
+sampling	ˈsɑːm.plɪŋ ˈsæm.plɪŋ	noun	0
 says	ˈsɛz	verb	0
 sebaceous	sɪˈbeɪ.ʃəs	adjective	0
-secondarily	ˈsɛ.kən.dɹə.liː ˌsɛ.kənˈdɛ.ɹɪ.liː	adverb	0
-secondary	ˈsɛ.kən.də.ɹiː ˈsɛ.kən.dɛ.ɹiː	adjective	0
+secondarily	ˈsɛ.kən.d]ɹ.ə.liː ˌsɛ.kənˈdɛ.ɹə.liː	adverb	0
+secondary	ˈsɛ.kən.d]ɹ.iː ˈsɛ.kən.dɛ.ɹiː	adjective	0
+secretary	ˈsɛ.kɹə.t]ɹ.iː ˈsɛ.kɹə.tɛ.ɹiː	noun	15
 sedation	sɪˈdeɪ.ʃən	noun	0
 sentience	ˈsɛn.ʃəns	noun	0
 sentient	ˈsɛn.ʃənt	adjective	0
-separately	ˈsɛ.pɹət.liː	adverb	0
-similarly	ˈsɪ.mə.lə˞.liː	adverb	0
+slavery	ˈsleɪv.ɹiː	noun	0
 socioeconomic	ˌsoʊ.siː.oʊˌɛ.kəˈnɒmɪk	adjective	0
-speak	ˈspiːk	verb	0
-speaking	ˈspiː.kɪŋ	substantive	0
-tangled	ˈtæŋ.gəld	adjective	0
+sorrow	ˈsɒ.ɹəʊ ˈsɑ˞ː.oʊ	noun	0
+sorrow	ˈsɒ.ɹəʊ ˈsɑ˞ː.oʊ	verb	0
+sovereignty	ˈsɒv.ɹɪn.tiː ˈsɑːv.ɹən.tiː	noun-U	0
+standardization	ˌstæn.də˞daɪˈzeɪ.ʃən	noun-U	0
 teenage	ˈtiː.neɪd͡ʒ	adjective	0
 thieve	θiːv	verb	0
-thorough	ˈθʌ.ɹəʊ ˈθɜ˞.(ɹ)oʊ	adjective	0
-toward	tʊˈwɔ˞d	preposition	0
-traveler	ˈtɹæv.lə˞	noun	0
-traveller	ˈtɹæv.lə˞	noun	0
-twinkling	ˈtwɪŋ.klɪŋ	substantive	0
+thorough	ˈθʌ.ɹəʊ ˈθɜ˞ː.oʊ	adjective	0
+toward	tʊˈwɔ˞ːd	preposition	0
+uh	ʌ	interjection	0
 uncomfortable	ʌŋˈkʌm.fə˞.tə.bəl	adjective	0
 uncomfortably	ʌŋˈkʌm.fə˞.tə.bliː	adverb	0
-uh	ʌ	interjection	0
 understood	ˌʌn.də˞ˈstʊd	verb	0
-unwound	ʌnˈwaʊNd	adjective	0
-usurp	juːˈsɜ˞p	verb	0
+unwound	ʌnˈwaʊnd	adjective	0
+usurp	juːˈsɜ˞ːp	verb	0
 vantage	ˈvɑːn.tɪd͡ʒ ˈvæn.tɪd͡ʒ	noun	0
 vastness	ˈvɑːst.nəs ˈvæst.nəs	noun	0
-washroom	ˈwɒʃ.ɹuːm	noun	0
 whilst	ˈwaɪlst	conjunction	0
 wishes	ˈwɪ.ʃɪz	noun	0
 withstood	wɪθˈstʊd	verb	0
 women	ˈwɪ.mɪn	noun	0
-cat	kæt	noun	0
-wolf	wʊlf	noun	3
-wolf	wʊlf	verb	0
-llama	ˈlɑː.mə	noun	0
-lion	ˈlaɪən	noun	0
-jump	d͡ʒʌmp	verb	0
-jump	d͡ʒʌmp	noun	0
+worn	wɔ˞ːn	adjective	0
+zealand	ˈziː.lənd	noun	0
+//START OF TRANSCRIPTION-GENERATED ENTRIES
