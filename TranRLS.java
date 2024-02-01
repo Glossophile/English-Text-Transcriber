@@ -171,10 +171,10 @@ public class TranRLS {
         prep = Util.removeAll(prep,".");
         prep = prep.replaceAll("ɑə˞", "ɑɹ");
         prep = prep.replaceAll("ɔə˞", "ɔɹ");
-        prep = prep.replaceAll("ɑɹ", "ɑ˞");
-        prep = prep.replaceAll("ɔɹ", "ɔ˞");
+        prep = prep.replaceAll("ɑɹ", "ɑ˞ː");
+        prep = prep.replaceAll("ɔɹ", "ɔ˞ː");
         prep = prep.replaceAll("ɚ", "ə˞");
-        prep = prep.replaceAll("ɝ", "ɜ˞");
+        prep = prep.replaceAll("ɝ", "ɜ˞ː");
         prep = prep.replaceAll("ɨ", "ə");
         prep = prep.replaceAll("ɹ̩", "ə˞");
         prep = prep.replaceAll("l̩", "əl");
