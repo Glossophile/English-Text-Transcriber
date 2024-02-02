@@ -26,7 +26,7 @@ public class Lingua {
             char ceci = ready.charAt(j);
             boolean diphthong = j < ready.length()-1 && isDiphthong(Character.toString(avant)+Character.toString(ceci));
             boolean syllabic = ceci == '̩';
-            if (ceci != 'ː' && (Lingua.isVowel(ceci) || Character.isDigit(ceci) || syllabic) && !diphthong) {
+            if (ceci != 'ː' && ceci != '˞' && (Lingua.isVowel(ceci) || Character.isDigit(ceci) || syllabic) && !diphthong) {
                 co += 1;
             }
             avant = ceci;
@@ -261,7 +261,7 @@ public class Lingua {
         }
     }
     public static boolean isVoiced (char letter) {
-        if (letter == 'b' || letter == 'm' || letter == 'v' || letter == 'ð' || letter == 'd' || letter == 'z' || letter == 'n' || letter == 'ʒ' || letter == 'ɡ' || letter == 'ŋ' || isVowel(letter) || letter == '˞'  || letter == 'ɹ' || letter == 'l' || letter == 'r'){ 
+        if (letter == 'b' || letter == 'm' || letter == 'v' || letter == 'ð' || letter == 'd' || letter == 'z' || letter == 'n' || letter == 'ʒ' || letter == 'ɡ' || letter == 'ŋ' || isVowel(letter) || letter == 'ɹ' || letter == 'l' || letter == 'r'){ 
             return true;
         }                        
         else {
@@ -269,7 +269,7 @@ public class Lingua {
         }
     }
     public static boolean isVowel (char letter) {
-        if (letter == 'ʌ' || letter == 'ɛ' || letter == 'ɪ' || letter == 'ɒ' || letter == 'ʊ' || letter == 'ɑ' || letter == 'ɜ' || letter == 'i' || letter == 'ɔ' || letter == 'u' || letter == 'æ' || letter == 'e' || letter == 'ə' || letter == 'o' || letter == 'a' || letter == 'ː' || letter == 'E' || letter == 'I' || letter == 'U'  || letter == 'O' || letter == 'ɩ' || letter == 'ʋ' || letter == ']' || letter == '[' || letter == 'ÿ' || letter == 'ï' || letter == 'ü' || letter == 'ö' || letter == 'ı' || letter == 'é' || letter == 'â' || letter == 'ê' || letter == 'ô') { 
+        if (letter == 'ʌ' || letter == 'ɛ' || letter == 'ɪ' || letter == 'ɒ' || letter == 'ʊ' || letter == 'ɑ' || letter == 'ɜ' || letter == 'i' || letter == 'ɔ' || letter == 'u' || letter == 'æ' || letter == 'e' || letter == 'ə' || letter == 'o' || letter == 'a' || letter == 'ː' || letter == '˞' || letter == 'E' || letter == 'I' || letter == 'U'  || letter == 'O' || letter == 'ɩ' || letter == 'ʋ' || letter == ']' || letter == '[' || letter == 'ÿ' || letter == 'ï' || letter == 'ü' || letter == 'ö' || letter == 'ı' || letter == 'é' || letter == 'â' || letter == 'ê' || letter == 'ô') { 
             return true;
         }                        
         else {
@@ -277,7 +277,7 @@ public class Lingua {
         }
     }
     public static boolean isConsonant (char letter) {
-        if (!isVowel(letter) && !isBound(letter) && Character.isLetter(letter) || letter == 'ʃ' || letter == 'ʒ' || letter == 'θ' || letter == 'ð' || letter == 'ŋ' || letter == '˞' || letter == 'ɹ' || letter == 'ʔ' || letter == 'ʍ' || letter == 'ç' || letter == 'ñ' || letter == 'þ') { 
+        if (!isVowel(letter) && !isBound(letter) && Character.isLetter(letter) || letter == 'ʃ' || letter == 'ʒ' || letter == 'θ' || letter == 'ð' || letter == 'ŋ' || letter == 'ɹ' || letter == 'ʔ' || letter == 'ʍ' || letter == 'ç' || letter == 'ñ' || letter == 'þ') { 
             return true;
         }                        
         else {
