@@ -978,7 +978,7 @@ public class Morphology {
         }
         return variety;
     }
-    //public static List<Lemma> spares = new ArrayList<>();
+    //public static List<Lemma> attempts = new ArrayList<>();
     public List<Lemma> findHead (String tradit, Lemma cmpsn, Dialect acnt, boolean rej, boolean blank) {
         List<Lemma> compounds = new ArrayList<>();
         List<Lemma> spares = new ArrayList<>();
@@ -1010,8 +1010,10 @@ public class Morphology {
                     Lemma noncap = nhdit.next();
                     String nonhd = Lemma.decReg(noncap,acnt);
                     ListIterator<Lemma> hdsitr = heads.listIterator();
+                    boolean passed = false;
                     while (hdsitr.hasNext()) {
                         Lemma caput = hdsitr.next();
+                        //System.out.println(caput.printParms());
                         String hd = Lemma.decReg(caput,acnt);
                         String combo = nonhd+hd;
                         combo = Util.removeAll(Util.removeAll(Util.removeAll(combo,"."),"ˈ"),"ˌ");
@@ -1112,7 +1114,7 @@ public class Morphology {
         else {
             dict.store(spares);
             if (export && !natLex) {
-                exports.addAll(spares);
+                //exports.addAll(spares);
             }
         }
         orgform = restore;
@@ -1199,17 +1201,35 @@ public class Morphology {
             Lemma questo = itrwhl.next();
             if (questo.getDghtr1() == null) {
                 List<Lemma> adds = findHead(log,questo,dial,rej,blank);
+                ListIterator<Lemma> addit = adds.listIterator();
+                while (addit.hasNext()) {
+                    //System.out.println((addit.next()).printParms());
+                    compounds.add(addit.next());
+                }
             }
             else if (questo.isFull()) {
                 compounds.add(questo);
             }
         }
-        return compounds;
+        if (compounds.isEmpty()) {
+            return wholes;
+        }
+        else {
+            return compounds;
+        }
     }
     public static List<Lemma> getProns (String log, String orig, Dialect dialect, boolean block, boolean syncopate) {
         List<Lemma> prons = Lemma.extract(log,DictReader.lookup(log,orig),dialect,block,syncopate);
         //System.out.println(Lemma.multiPrint(prons));
         return Lemma.trimBlank(prons);
+    }
+    public boolean hscp (String pscp) {
+        if (pscp.endsWith("houses") && pscp.length() > 6 || pscp.endsWith("house") && pscp.length() > 5) {
+            return true;
+        }
+        else {
+            return false;
+        }
     }
     public List<Lemma> parseLemma (String org, List<Lemma> input, Dialect dial, boolean trypfx, boolean trysfx, boolean record, boolean bar) {
         ListIterator<Lemma> through = input.listIterator();
@@ -1243,7 +1263,7 @@ public class Morphology {
                 Convert17.report = "Looking up "+(TextParser.cleanUp(ortho,false,true)).toUpperCase()+" in Cambridge Online Dictionary.";
                 bases = getProns(ortho,org,dial,bar,dial.getSyncope());
                 reclim = 0;
-                if (treed && reclim < trials && !Lemma.structured(bases)) {
+                if (treed && reclim < trials && !Lemma.structured(bases) || hscp(ortho)) {
                     reclim++;
                     bases = findCompounds(ortho,bases,dial,bar,false);
                 }
