@@ -405,7 +405,7 @@ public class Phonology {
             if (Lingua.isVowel(des) == true || Character.isDigit(des)) {
                 break;
             }
-            else if (des != 'ˌ' && des != 'ˈ' && des != 'ː' && des != '.' && des != '+' && des != '-' && des != '–') {
+            else if (des != 'ˌ' && des != 'ˈ' && des != 'ː' && des != '˞' && des != '.' && des != '+' && des != '-' && des != '–') {
                 dist++;
             }
             go++;
@@ -1199,8 +1199,7 @@ public class Phonology {
         for (int g = 0; g < uksyl.size() && g < ussyl.size(); g++) {
             String amsyl = ussyl.get(g);
             String britsyl = uksyl.get(g);
-            String dual = amsyl+"   "+britsyl;
-            //System.out.println(dual);
+            //System.out.println(amsyl+"   "+britsyl);
             usstr = amsyl.startsWith("ˈ") || amsyl.startsWith("ˌ");
             ukstr = britsyl.startsWith("ˈ") || britsyl.startsWith("ˌ");
             String coda1 = Lingua.coda(britsyl);
@@ -1229,7 +1228,7 @@ public class Phonology {
                 String prox2 = ussyl.get(g+1);
                 String fol1 = shave(Lingua.onset(prox1));
                 String fol2 = shave(Lingua.onset(prox2));
-                boolean routik = coda2.equals("˞") && fol2.equals("(ɹ)") && fol1.equals("ɹ");
+                boolean routik = (prox2.endsWith("˞ː") || prox2.endsWith("˞")) && fol2.equals("(ɹ)") && fol1.equals("ɹ");
                 if ((shave(fol2)).startsWith(coda1) && !routik) {
                     try {
                         amsyl += fol2.substring(0,codif);
@@ -1260,7 +1259,7 @@ public class Phonology {
             else if (britsyl.endsWith("ʊə") && amsyl.endsWith("ə˞") && !amsyl.endsWith("ʊə˞")) {
                 amsyl = britsyl+"˞";
             }
-            else if (britsyl.contains("ʊə") && amsyl.contains("ɜ˞")) {
+            else if (britsyl.contains("ʊə") && amsyl.contains("ɜ˞ː")) {
                 amsyl = britsyl+"˞";
             }
             else if ((britsyl.startsWith(".ɹ") || britsyl.startsWith("ˌɹ") || britsyl.startsWith("ˈɹ")) && (amsyl.startsWith(".(ɹ)ə") || amsyl.startsWith("ˌ(ɹ)ʌ") || amsyl.startsWith("ˈ(ɹ)ʌ") || amsyl.startsWith(".(ɹ)ɑː") || amsyl.startsWith("ˌ(ɹ)ɑː") || amsyl.startsWith("ˈ(ɹ)ɑː"))) {
@@ -1916,6 +1915,15 @@ public class Phonology {
         if (!pros) {
             id = Util.removeAll(Util.removeAll(id,"ˈ"),"ˌ");
         }
+        id = id.replaceAll("aɪ","aɪ̯");
+        id = id.replaceAll("eɪ","eɪ̯");
+        id = id.replaceAll("ɔɪ","ɔɪ̯");
+        id = id.replaceAll("aʊ","aʊ̯");
+        id = id.replaceAll("oʊ","oʊ̯");
+        id = id.replaceAll("ɛə","ɛə̯");
+        id = id.replaceAll("ɪə","ɪə̯");
+        id = id.replaceAll("ʊə","ʊə̯");
+        id = Util.removeAll(id,".");
         return id;
     }
     public static String prepIAST(String ipa) {
