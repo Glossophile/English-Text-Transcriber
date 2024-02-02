@@ -1119,6 +1119,9 @@ public class Lemma {
         mater.daughter1 = filia1;
         mater.daughter2 = filia2;
         mater.setDepth(mater.getDepth()+filia1.getDepth());
+        if (isPrefix(filia2) || isRoot(filia2)) {
+            mater.setAltr(filia1.getAlter());
+        }
         return mater;
     }
     public boolean structured () {
